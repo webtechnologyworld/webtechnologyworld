@@ -5,6 +5,16 @@ $dbname = "contactform";
 $username = "root";
 $password = "";
 
+
+// CREATE TABLE contactform (
+//     id INT AUTO_INCREMENT PRIMARY KEY,      -- Unique ID for each entry
+//     name VARCHAR(255) NOT NULL,             -- Name of the person
+//     email VARCHAR(255) NOT NULL,            -- Email address
+//     message TEXT NOT NULL,                  -- Message content
+//     status BOOLEAN DEFAULT FALSE,           -- Status: TRUE if addressed, FALSE if pending
+//     submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Timestamp of submission
+// );
+
 // Connect to the database
 $conn = new mysqli($host, $username, $password, $dbname);
 
