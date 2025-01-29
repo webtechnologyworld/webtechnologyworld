@@ -14,8 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-Git Workflow for Development
-============
+## Git Workflow for Development
 
 Follow these steps to ensure a smooth development process:
 
@@ -53,5 +52,4 @@ git push --set-upstream origin BranchName
 ```
 ### **5. Raise a PR**
 Raise a PR agaist Main branch:
-
 
