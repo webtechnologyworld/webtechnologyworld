@@ -26,11 +26,22 @@ git pull
 ```
 
 ### **2. Create a branch**
-Before starting, create a branch from latest code:
+Before starting, create a new branch from latest code (main brach):
+check the current branch
 
+```sh
+git status 
+```
+if it is main branch create a new branch
 ```sh
 git checkout -b "BranchName"
 ```
+if not main branch then go to main branch 
+
+```sh
+git checkout main
+```
+
 ### **3. Development and testing**
 Do loacl changes and verify functionalities in local server:
 
