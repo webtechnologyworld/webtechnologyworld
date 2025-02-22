@@ -58,7 +58,10 @@
         <table>
             <tr>
                 <th>Filename</th>
-                <th>Action</th>
+                <th>Request</th>
+                <th>Response</th>
+
+                
             </tr>
             <?php
             $uploadDir = "uploads/";
@@ -67,7 +70,21 @@
                 foreach ($files as $file) {
                     $fileName = basename($file);
                      $fileWTE=pathinfo($fileName, PATHINFO_FILENAME);
-                    echo "<tr><td>$fileName</td><td><a href='api.php?file=$fileWTE'>View</a></td></tr>";
+
+                    echo "<tr><td>$fileName</td>";
+
+                    if (file_exists("uploads/request/$fileName")){
+                        echo  "<td><a href='api.php?req=$fileWTE'>View</a></td>";
+                    } else{
+                        echo "<td>NA</td>";
+                    }
+
+                    if (file_exists("uploads/$fileName")){
+                        echo  "<td><a href='api.php?res=$fileWTE'>View</a></td>";
+                    } else{
+                        echo "<td>NA</td>";
+                    }
+                   
                 }
             }
             ?>

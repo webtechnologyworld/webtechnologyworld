@@ -1,5 +1,9 @@
 {
+  "status": "success",
+  "message": "OTP verified. Logging in...",
+  "data": {
+    "user_id": 1,
     "email": "user@example.com",
-    "otp": "123456"
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
   }
-  
+}

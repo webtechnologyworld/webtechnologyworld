@@ -40,6 +40,10 @@
     <div class="container">
         <h2>Upload JSON File</h2>
         <form action="upload.php" method="post" enctype="multipart/form-data">
+            <select name="filetyped">
+            <option value="res">Response</option>
+            <option value="req">Request</option>
+            </select><br>
             <input type="file" name="jsonFile" accept=".json" required>
             <br>
             <button type="submit">Upload</button>
@@ -51,7 +55,13 @@
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['jsonFile'])) {
         header("Content-Type: application/json");
+        $filetyped = htmlspecialchars($_POST["filetyped"]);
+        if($filetyped=="req"){
+            $uploadDir = "uploads/request/";
+        } else {
         $uploadDir = "uploads/";
+        }
+        
         if (!is_dir($uploadDir)) {
             mkdir($uploadDir, 0777, true);
         }
