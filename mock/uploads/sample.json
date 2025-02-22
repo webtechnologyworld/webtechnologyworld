@@ -1,0 +1,24 @@
+{"data":[
+  {
+    "postcontent": {
+      "title": "Exploring New Horizons",
+      "description": "Join me as I explore new places and experiences in 2025. The adventure continues!",
+      "hashtags": ["#TravelGoals", "#AdventureTime", "#ExploreMore"]
+    },
+    "postimage": {
+      "url": "https://images.pexels.com/photos/27091196/pexels-photo-27091196/free-photo-of-close-up-of-a-woman-holding-a-basket-full-of-lemons.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "alt_text": "A beautiful landscape during sunset"
+    }
+  },
+  {
+    "postcontent": {
+      "title": "Healthy Living Tips",
+      "description": "Discover simple ways to improve your health and well-being with small daily habits.",
+      "hashtags": ["#HealthyLiving", "#WellnessJourney", "#DailyHabits"]
+    },
+    "postimage": {
+      "url": "https://images.pexels.com/photos/2647933/pexels-photo-2647933.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "alt_text": "A bowl of fresh fruits and vegetables"
+    }
+  }
+]}
