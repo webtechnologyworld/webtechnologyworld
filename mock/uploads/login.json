@@ -3,6 +3,6 @@
     "message": "OTP sent to your email.",
     "data": {
       "email": "user@example.com",
-      "otp_validity": 300 // OTP valid for 5 minutes (in seconds)
+      "otp_validity": 300
     }
   }

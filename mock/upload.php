@@ -44,6 +44,7 @@
             <br>
             <button type="submit">Upload</button>
         </form>
+        <div>List of Json Files. <a href='index.php'>View</a></div>
         <div id="response"></div>
     </div>
 
